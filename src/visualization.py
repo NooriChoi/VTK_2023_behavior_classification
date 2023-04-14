@@ -22,6 +22,7 @@ def umap_figure(embedding):
     plt.scatter(embedding[:, 0], embedding[:, 1], c=dist_colors, s=0.1)
     plt.gca().set_aspect('equal', 'datalim')
     plt.show()
+    plt.close()
 
 def hdbscan_figure(embedding, cluster_labels):
     # assign colors to time windows by the clustering results
