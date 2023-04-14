@@ -22,7 +22,7 @@ def umap_figure(embedding):
     plt.scatter(embedding[:, 0], embedding[:, 1], c=dist_colors, s=0.1)
     plt.gca().set_aspect('equal', 'datalim')
     plt.show()
-
+    
 def hdbscan_figure(embedding, cluster_labels):
     # assign colors to time windows by the clustering results
     color_palette = sns.color_palette('tab10')
@@ -50,8 +50,7 @@ def LSTM_umap_figure(embedding):
     plt.scatter(embedding[:, 0], embedding[:, 1], c=dist_colors)
     plt.gca().set_aspect('equal', 'datalim')
     plt.show()
-    plt.close()
-    
+     
 def LSTM_hdbscan_figure(embedding, cluster_labels, true_labels):
     # assign colors to time windows by the clustering results
     color_palette = sns.color_palette('tab10')
@@ -84,4 +83,3 @@ def LSTM_hdbscan_figure(embedding, cluster_labels, true_labels):
     plt.legend(handles, labels, loc = 'upper right')
     plt.gca().set_aspect('equal', 'datalim')
     plt.show()
-    plt.close()
