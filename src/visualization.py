@@ -75,8 +75,8 @@ def LSTM_hdbscan_figure(embedding, cluster_labels, true_labels):
     
     f = lambda m,c: plt.plot([],[],marker=m, color=c, ls="none")[0]
 
-    handles = [f("s", cluster_colors[i]) for i in range(2)]
-    handles += [f(markers[i], "k") for i in range(2)]
+    handles = [f("s", cluster_colors[i]) for i in range(len(cluster_labels))]
+    handles += [f(markers[i], "k") for i in range(n_true_label)]
     
     labels = list(set(cluster_labels)) + true_label_unique
     
