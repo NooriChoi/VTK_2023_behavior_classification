@@ -60,7 +60,10 @@ def LSTM_hdbscan_figure(embedding, cluster_labels, true_labels):
     
     ## plot UMAP latent projection with clustering results
     true_label_unique = list(set(true_labels))
+    pred_label_unique = list(set(cluster_labels))
+    
     n_true_label = len(true_label_unique)
+    n_pred_label = len(pred_label_unique)
     markers = ["o", "x", "^", "s", "*"]
     
     fig, ax = plt.subplots()
@@ -75,7 +78,10 @@ def LSTM_hdbscan_figure(embedding, cluster_labels, true_labels):
     
     f = lambda m,c: plt.plot([],[],marker=m, color=c, ls="none")[0]
 
-    handles = [f("s", cluster_colors[i]) for i in range(len(cluster_labels))]
+    handles = [f("s", color_palette[i]) for i in range(n_pred_label-1)]
+    if -1 in pred_label_unique:
+        handles += [f("s", (0.5, 0.5, 0.5))]
+    
     handles += [f(markers[i], "k") for i in range(n_true_label)]
     
     labels = list(set(cluster_labels)) + true_label_unique
