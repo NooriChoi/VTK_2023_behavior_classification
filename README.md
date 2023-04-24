@@ -1,7 +1,7 @@
 # VTK_2023_behavior_classification
 Course materials for VTK_2023 at Max Planck Institute of Animal Behavior
 
-## Step 1. Install anaconda
+## Step 1. Install Anaconda
 Go to the Anaconda website (https://docs.anaconda.com/free/anaconda/install/index.html) and install the version for your OS.
 
 ## Step 2. Create an Ananconda environment
