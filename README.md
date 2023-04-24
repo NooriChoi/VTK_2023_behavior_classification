@@ -23,11 +23,15 @@ Go to your terminal or Anaconda Prompt and type the following codes:
 ```
 conda activate VTK_2023
 ```
-2. Go to the 'notebook' directory in the downloaded the Zip file.
+2. Install jupyterlab
+```
+pip install jupyterlab
+```
+3. Go to the 'notebook' directory in the downloaded the Zip file.
 ```
 cd YOUR\DIRECTORY\PATH\...\notebook
 ```
-3. Run Jupyter Notebook
+4. Run Jupyter Notebook
 ```
 jupyter notebook
 ```
