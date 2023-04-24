@@ -27,6 +27,10 @@ conda activate VTK_2023
 ```
 pip install jupyterlab
 ```
+2-1. For Mac users only!
+```
+conda install -c apple tensorflow-deps
+```
 3. Go to the 'notebook' directory in the downloaded the Zip file.
 ```
 cd YOUR\DIRECTORY\PATH\...\notebook
