@@ -1,0 +1,5 @@
+umap-learn
+hdbscan
+seaborn
+tensorflow-macos
+tensorflow-metal
