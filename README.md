@@ -30,6 +30,7 @@ pip install jupyterlab
 2-1. For Mac users only!
 ```
 conda install -c apple tensorflow-deps
+conda install ipywidgets
 ```
 3. Go to the 'notebook' directory in the downloaded the Zip file.
 ```
