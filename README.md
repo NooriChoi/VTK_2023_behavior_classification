@@ -7,7 +7,7 @@ Go to the Anaconda website (https://docs.anaconda.com/free/anaconda/install/inde
 ## Step 2. Create an Ananconda environment
 Open the terminal or an Anaconda Prompt and type the following code:
 ```
-conda create --name VTK_2023 python=3.11
+conda create --name VTK_2023 python=3.10
 ```
 ## Step 3. Download files
 1. Above the list of files, click "Code".
@@ -38,7 +38,7 @@ cd YOUR\DIRECTORY\PATH\...\notebook
 ```
 4. Run Jupyter Notebook
 ```
-jupyter notebook
+jupyter lab
 ```
 
 ## Step 4. Enjoy your class!
